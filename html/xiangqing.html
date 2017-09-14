@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/public.css" />	
+		<link rel="stylesheet" href="../css/public1.css" />
+		<link rel="stylesheet" href="../css/xiangqing.css">
+	    <script src="../js/jquery-1.11.1.min.js"></script>
+	    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+	    <script src="../js/cookie.js"></script>
+	</head>
+	<body>
+		<section id="xiang-top"></section>
+		<section id="xiang-head"></section>
+		<section id="xiang-ban"></section>
+		<section id="xiang-content" class="margin">
+			<!--<p id="xiangyin">宝宝蛋，幼儿思维边界拓展洞洞书 益智玩具书 全4册套装</p>-->
+			<!--<div class="xiangfw">
+				<div class="xicleft">
+					<div class="xicleft-cent">
+						<div class="cent-img-1">
+						    <img  src="../img/78852520813058_800x800.jpg!350x350.jpg">
+						    <img src="../img/00750164010587_800x800.jpg!100x100.jpg"/">
+						    <div class="mark"></div>
+						</div>
+						<div class="big">
+							<img  src="../img/78852520813058_800x800.jpg!350x350.jpg">
+						    <img src="../img/00750164010587_800x800.jpg!100x100.jpg"/">
+						</div>
+						<div class="xiul">
+							<ul>
+								<li><img class="xul" src="../img/78852520813058_800x800.jpg!350x350.jpg"/></li>
+								<li><img class="xul" src="../img/00750164010587_800x800.jpg!100x100.jpg"/></li>
+							</ul>	
+						</div>
+					</div>	
+					<p><i class="fa fa-heart"></i>收藏商品</p>
+			   </div>			   			    
+			    <div class="xiccenter">
+					<h3>今日特卖
+						<span>宝宝但记得深刻理解撒开了多久深刻理解的快乐啊睡觉</span>						
+					</h3>	
+					<p class="xip">中英双语内涵8大功能认识动物玩玩具学说话照镜子锻炼小手指亲子共读训练想象力圆角切边设计不易伤宝宝小手绿色印刷安全耐用</p>
+					<h4 class="xh4">
+						<span>￥</span>
+						<span>62.8</span>
+						<span>5.3折</span>
+						<span>包邮</span>
+						<span>参考价:</span>
+						<span>￥119.20</span>
+					</h4>
+					<div class="xcen">
+						<p class="xuan"><span>运费</span>包邮（偏远地区除外）</p>
+						<p class="xuan"><span>优惠</span><img src="../img/t1.png">购买后约返10个贝壳 <i class="fa fa-angle-down"></i></p>
+						<p class="xuan">
+							<span>颜色</span>
+							<a><img src="../img/78852520813058_800x800.jpg!350x350.jpg">颜色1</a>
+						</p>
+						<ul class="btn-numbox">
+				            <li><span class="number">数量</span></li>
+				            <li class="btn-numbox-fir">
+				                <ul class="count">
+				                    <li><span id="num-jian" class="num-jian">-</span></li>
+				                    <li><input type="text" class="input-num" id="input-num" value="1" /></li>
+				                    <li><span id="num-jia" class="num-jia">+</span></li>
+				                </ul>
+				            </li>
+				　　　  </ul>
+
+						
+						<p class="xuan"><span>服务承诺：</span>全场包邮，全部正品，7天无理由退货，退货补运费</p>						
+					</div>
+					<div id="shp-xuan">
+						<div class="shp-dian">
+								<p class="top">￥<span id="jp">32</span>.<span>79</span></p>
+								<p class="bottom">单独购买</p>
+						</div>
+						<div class="shp-dian1">
+								<p class="top">￥<span id="jp">19</span>.<span>30</span></p>
+								<p class="bottom">两人团</p>
+						</div>
+					</div>
+				</div>-->
+				<!--<div class="xicright">
+					<h3>特卖品牌</h3>
+					<div class="ne">
+						<p class="x1">品牌：<span>宝宝强</span></p>
+						<p class="gong">
+							<i><img src="../img/te3.png" title="已通过企业实名验证"></i>
+							<i><img src="../img/te2.png" title="已缴纳保证金"></i>
+							<i><img src="../img/shopId.png" title="工商执照"></i>
+						</p>
+						<p class="x2">服务：</p>
+						<p class="x3">本商品由品牌入驻商从北京北京市发货，并提供售后服务。</p>
+					</div>
+					<ul>
+						<li>品牌综合评分:<span>4.9</span></li>
+						<li>品牌综合评分:<span>4.9</span></li>
+						<li>品牌综合评分:<span>4.9</span></li>
+					</ul>
+				<div>	-->
+			</div>
+		</section>
+		<section id="xiang-friendship"></section>
+		<section id="xiang-footer"></section>
+		<section id="xiang-cebian"></section>
+		<section></section>
+		<section></section>
+	</body>
+</html>
+
+<script src="../js/xiangqing.js"></script>
+<script>
+	console.log(location.href)
+	var str = location.href;	
+	//http://127.0.0.1:8020/xiangmu/html/xiangqing.html?aname=class2&cd=002&smallid=tian001
+	var arr = str.split("?")[1];
+	var aname = arr.split("&")[0].split("=")[1];
+	var cd =arr.split("&")[1].split("=")[1];
+	var smallid = arr.split("&")[2].split("=")[1];
+	$(function(){
+		$.ajax({
+			type:"get",
+			url:"../json/shouye.json",
+			success:function(res){
+				var str="";
+				var str1="";
+				var str2="";
+				var ch = res.classfly002;
+				for(var i in ch){
+					var cm = ch[i]
+					if(aname==i&&cd==cm.bigid){
+						str = `<p id="xiangyin">${cm.ispan2}</p>`
+					}
+					for(var j in cm.list){
+						var cn = cm.list[j]
+						if(aname==i&&cd==ch[i].bigid&smallid==cn.id){
+							console.log(cn.id)
+							str1 = `<div class="xiangfw">
+								        <div class="xicleft">
+											<div class="xicleft-cent">
+												<div class="cent-img-1">
+												    <img  src="../img/${cn.src}"/>
+												    <div class="mark"></div>
+												</div>
+												<div class="big">
+													<img  src="../img/${cn.src}">
+												</div>
+												<div class="xiul">
+													<ul>
+														<li><img class="xul" src="../img/${cn.src}"/></li>
+													</ul>	
+												</div>
+											</div>	
+											<p><i class="fa fa-heart"></i>收藏商品</p>
+									   </div>			   			    
+									    <div class="xiccenter">
+											<h3>今日特卖
+												<span>${cn.span1}</span>						
+											</h3>	
+											<p class="xip">${cn.span2}</p>
+											<h4 class="xh4">
+												<span>￥</span>
+												<span>${(eval(Number(cn.price1)+Number(cn.price2)/100)).toFixed(2)}</span>
+												<span>${((eval(Number(cn.price1)+Number(cn.price2)/100))/cn.price3*10).toFixed(1)}折</span>
+												<span>包邮</span>
+												<span>参考价:</span>
+												<span>￥${cn.price3}</span>
+											</h4>
+											<div class="xcen">
+												<p class="xuan"><span>运费</span>包邮（偏远地区除外）</p>
+												<p class="xuan"><span>优惠</span><img src="../img/t1.png">购买后约返10个贝壳 <i class="fa fa-angle-down"></i></p>
+												<p class="xuan">
+													<span>颜色</span>
+													<a><img src="../img/${cn.src}"/>颜色1</a>
+												</p>
+												<ul class="btn-numbox">
+										            <li><span class="number">数量</span></li>
+										            <li class="btn-numbox-fir">
+										              <ul class="count">
+										                    <li><span id="num-jian" class="num-jian">-</span></li>
+										                    <li><input type="text" class="input-num" id="input-num" value="1" /></li>
+										                    <li><span id="num-jia" class="num-jia">+</span></li>
+										                </ul>
+										            </li>
+										　　　  </ul>
+												
+												<p class="xuan"><span>服务承诺：</span>全场包邮，全部正品，7天无理由退货，退货补运费</p>						
+											</div>
+											<div id="shp-xuan">
+												<div class="shp-dian">
+														<p class="top">￥<span id="jp">${cn.price1}</span>.<span>${cn.price2}</span></p>
+														<span class="ofs" style="display:none" data-id=${cn.id}  data-src=${cn.src} data-price1=${cn.price1} data-price2=${cn.price2} data-price3=${cn.price3} data-span1=${cn.span1}></span>
+														<p class="bottom">单独购买</p>												
+												</div>												
+												<div class="shp-dian1">
+														<p class="top">￥<span id="jp">${parseInt((Number(cn.price1))*0.8 )}</span>.<span>
+														${(((((Number(cn.price1)+Number(cn.price2))) *0.8 ).toFixed(2)-parseInt( ((Number(cn.price1)+Number(cn.price2)))*0.8 ) ).toFixed(2))*100 }</span></p>
+														<p class="bottom">两人团(请手机购买)</p>									
+												</div>
+											</div>
+									    </div>
+									    <div class="xicright">
+											<h3>特卖品牌</h3>
+											<div class="ne">
+												<p class="x1">品牌：<span>${cm.ispan1}</span></p>
+												<p class="gong">
+													<i><img src="../img/te3.png" title="已通过企业实名验证"></i>
+													<i><img src="../img/te2.png" title="已缴纳保证金"></i>
+													<i><img src="../img/shopId.png" title="工商执照"></i>
+												</p>
+												<p class="x2">服务：</p>
+												<p class="x3">本商品由品牌入驻商从北京北京市发货，并提供售后服务。</p>
+											</div>
+											<ul>
+												<li>品牌综合评分:<span>4.9</span></li>
+												<li>品牌综合评分:<span>4.9</span></li>
+												<li>品牌综合评分:<span>4.9</span></li>
+											</ul>
+										<div>	`
+						}
+					}
+					
+                   
+				}
+				$("#xiang-content").prepend(str)
+				$("#xiang-content").append(str1);
+				//判断商品的增减
+				    $("#num-jian").click(function(){
+						$("#input-num").val($("#input-num").val()-1)
+	                        if($("#input-num").val()<=0){
+	                            $("#input-num").val("0");
+	                        }
+					})
+					$("#num-jia").click(function(){
+							$("#input-num").val(Number( $("#input-num").val() )+Number(1));
+					})
+					//存cookie
+					$(".shp-dian").click(function(){
+						var num1 = $("#input-num").val();
+						var arr = [];
+						var flag = true;//可以往数组中添加数据
+						var _json={
+							num : num1,
+							id : $(this).find("span.ofs").data("id"),
+							src : $(this).find("span.ofs").data("src"),
+							price1 : $(this).find("span.ofs").data("price1"),
+							price2 : $(this).find("span.ofs").data("price2"),
+							price3 : $(this).find("span.ofs").data("price3"),
+							span1 :$(this).find("span.ofs").data("span1")							
+						}
+						var cookieInfo = getCookie("shoplist");
+						if(cookieInfo.length!=0){
+							arr = cookieInfo;
+							for(var i in arr){
+								if(_json.id==arr[i].id){
+									arr[i].num=Number( num1 )+Number( arr[i].num );
+									console.log(arr[i].num)
+									flag = false;
+									break;
+//                              console.log(arr[i].num,num1)
+//                              console.log(num1)
+								}
+							}
+						}
+                        if(flag){
+                        	arr.push(_json);
+                        }
+						
+						setCookie("shoplist",JSON.stringify(arr));
+//						console.log(_json)
+						var f =confirm("是否继续购买？确定--继续购买，取消---去购物车计算");
+						if(!f){
+							location.href="gouwuche.html";
+						}
+					})
+					
+					
+					//放大镜特效
+					$(".xiul ul li").click(function(){
+						var index = $(this).index();
+						$(this).css("border","2px solid #FF4956")			    		
+						       .siblings().css("border","none")
+						$(".cent-img-1 img").eq(index).show().siblings().hide();			    		   
+					})
+				
+				    $(".cent-img-1 img").mouseenter(function(){
+				   	    var index = $(this).index();
+				  	  
+				   	    $(".big").show();
+				   	    $(".big img").eq(index).show()
+				   	                           .siblings().hide();
+				   	    $(".mark").show();
+				    })
+				    $(".cent-img-1").mouseleave(function(){
+				   	    $(".big").hide();                  	    
+				   	    $(".mark").hide();
+				    })
+					$(".cent-img-1").mousemove(function(e){
+						var e = e||event;
+						var x = e.pageX-$(".cent-img-1").offset().left-$(".mark").width()/2;
+						var y = e.pageY-$(".cent-img-1").offset().top-$(".mark").height()/2;
+						var maxl = $(".cent-img-1").width()-$(".mark").width();
+						var maxt = $(".cent-img-1").height()-$(".mark").height();
+						x = Math.min( maxl,Math.max(0,x) );
+						y = Math.min( maxt,Math.max(0,y) );
+						$(".mark").css({"left":x,"top":y});
+						
+						var bigLeft = $(".big img").eq(0).width()/$(".cent-img-1 img").eq(0).width()*x;
+						var bigTop = $(".big img").eq(0).height()/$(".cent-img-1 img").eq(0).height()*y;
+						$(".big img").css({"left":-bigLeft,"top":-bigTop})
+					}) 
+			}
+		})
+	})
+</script>

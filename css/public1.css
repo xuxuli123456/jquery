@@ -1,0 +1,110 @@
+*{margin:0;padding: 0;}
+.margin{width:1080px;margin:0 auto;}
+
+#top{height:29px;;}
+#top ul{float: right;}
+#top ul li{float: left;padding:0 8px;height:12px;font:12px/29px "";line-height: 29px;}
+#top ul li span{margin-left:8px;}
+#top ul li select{border:none; outline:none;}
+
+#header{height:105px;}
+#logo{margin-top: 40px;float: left;}
+#pinpai{float: right;margin-top:45px;}
+
+#heade{height:105px;display: flex;}
+#log{margin-top: 30px;}
+#pinp{margin-top:35px;margin-left:300px;margin-right: 40px;}
+#shopping{width:132px;height:34px;border-radius: 8px;background: #FF4965;position:relative;margin-top: 45px;text-align: center;
+font:bold 14px/34px "";color:white;}
+#shopping a{color:#ffffff;margin-right: 5px;}
+#shopping-ball{width:30px;height: 30px;border-radius: 50%;background: #000000;position: absolute;left:-17px;border: 2px solid #ffffff;
+text-align: center;line-height: 30px;}
+
+#ban{height: 38px;background: #FF4965;}
+#ban .margin {line-height: 38px;}
+#ban .margin ul{float: left;line-height: 38px;}
+#ban .margin ul li{width:100px;font:bold 14px/38px "";float: left;text-align: center;}
+#ban .margin ul li:first-child{background:#f34660;}
+#ban .margin ul li:hover{background:#f34660;}
+#ban .margin ul li a{color:white;}
+#ban-sp-h {font:12px/38px "";color: white;height:38px;width:66px;display: block;position: relative;float:left}
+#ban-sp-h a{width:27px;height:18px;left:0;top:0;position:absolute;left:-10px;top:-5px}
+#ban-sp-h a img{width:27px;height:18px;display: block;}
+#ban-sp-r{float:left;width:200px;height: 26px;background: white;line-height: 26px;margin-top:5px;
+border-radius:2px;border: 1px solid #EDEDED;}
+#search{margin-left:8px;border: none;outline: none;font:12px/26px "";height: 26px;width:170px;}
+
+#banner{height: 30px;background: white;position: relative}
+#banner .margin{display: flex;line-height: 30px;;}
+#banner ul li{width:56px;float:left;font-size: 10px;text-align: center;}
+#banner ul li a{color:#999999;}
+#banner ul li:hover a{color:#f34660}
+#banner ul li:hover{border-bottom:2px solid #f34660;font:10px/28px "";}
+
+#banner .shou-banner-sp{height:26px;margin-left:20px;margin-right:10px;;}
+#shou-banner-age{margin:0 10px;position: relative}
+.shou-sex-choose{width:270px;height: 158px;border: 1px solid #e6e6e6;position: absolute;left:-50px;top:30px;z-index: 10;
+background: #fff;display: none;}
+.shou-sex-choose p{font:12px/24px "";color:#8e8e8e;padding-left:21px;}
+.shou-sex-choose ul{font:10px/26px "";height: 26px;margin-top:bottom:22px;display: flex;justify-content: space-around;
+margin-bottom:22px ;}
+.shou-sex-choose ul li{text-align: center;width: 32px;}
+.shou-sex-choose ul li a{color:#999999;}
+.shou-sex-choose .shou-sex-choose-boy{margin-top:13px}
+
+#banner .shou-banner-right{width:156px;background: #f7f7f7;text-align: center;font:bold 12px/26px "";color:#ff506b;margin-left: 241px;;}
+#banner .shou-banner-right a{color:#ff506b;}
+
+
+
+
+#friendship{height:41px;background: black;text-align: center;}
+#friendship .margin{text-align: center;}
+#friendship ul {text-align: center;width:1080px;display: inline-block;}
+#friendship ul li{display: inline;line-height: 41px;font:10px/41px "";}
+#friendship ul li a{color:#ededed;margin-left:5px;margin-right: 8px;}
+#friendship ul li span{color:white;}
+#footer{height:104px;}
+#footer div{margin-top:20px;}
+#footer p{text-align:center;font:10px/18px "";margin-top:6px;}
+
+/*侧边栏css*/
+.publish-ce-ul{position: fixed;right: 100px;top:288px;border: 1px solid #ececec;z-index: 10;}
+ .publish-ce-ul li{list-style: none;font:20px/44px "";color:#ff4965;width:70px;text-align: center;height: 44px;background: #fff;
+ border-bottom: 1px solid #ececec;}
+ .publish-ce-ul li a{color:#ff4965}
+ .publish-ce-ul .shopp-d1{position: relative}
+ .publish-ce-ul li .publish-ce-shopping{display:none;width:350px;height: 240px;border: 1px solid #ff4956;position: absolute;left:-350px;top:-160px}
+ .publish-ce-ul li .publish-ce-shopping p{width: 100%;height:32px;font:12px/32px "";background: #fff9fb;}
+ .publish-ce-ul li .pceshopc {min-height:160px;}
+ .publish-ce-ul li .pceshopc {font-size: 14px;color:#999;font:14px/160px "";background: #fff;}
+ .publish-ce-ul li .pceshopb{width:350px;height: 46px;line-height: 46px;background: #fff9fb;} 
+ .publish-ce-ul li .pceshopb span:first-child{font-size: 12px;color:#99918c;float: left;margin-left:20px}
+ .publish-ce-ul li .pceshopb span:nth-child(2){color:#FF4956;font-size: 16px;float: left;}
+ #shoptotal{display: inline-block; width:120px;height: 35px;background: #FF4956;text-align: center;line-height: 35px;color:#fff;
+ font-size: 12px;border-radius: 5px;float: right;margin-right: 15px;margin-top: 7px;}
+ .publish-ce-ul li:nth-child(2){position: relative;}
+ .publish-ce-shopping2{display:none;width:180px;height: 220px;border: 2px solid #FF4956;text-align: center;
+ position: absolute;left:-180px;top:-100px;background: #fff;}
+ .publish-ce-shopping2 p {font:10px/14px "";}
+ .publish-ce-shopping2 p:first-child{margin-top: 10px;}
+ .publish-ce-shopping2 img{margin-top: 10px;}
+ .publish-ce-ul li:nth-child(3){position: relative;}
+ .publish-ce-shopping3{background":"#ff4956;position: absolute;width:70px;text-align: center;height: 44px;font-size: 12px;
+ left:0;top:0;background: #FF4956;display: none;color: #fff;;}
+ .publish-ce-ul li:nth-child(4){position: relative;}
+ .publish-ce-shopping4{background":"#ff4956;position: absolute;width:70px;text-align: center;height: 44px;font-size: 12px;
+ left:0;top:0;background: #FF4956;display: none;color: #fff;;}
+ 
+/*固定导航栏目*/
+#beibei{height: 37px;background: white;z-index:100;position: absolute;top:170px;display: none;width:100%}
+#beibei .margin{display: flex;line-height: 37px;width:1080px;}
+#beibei ul li{float: left;width: 56px;text-align: center;font:10px/34px "";}
+#beibei .shou-beibei-sp{font-size: 28px;}
+#beibei .shou-beibei-age{font-size: 10px;margin:0 5px;color:#999999}
+#beibei .shou-beibei-right{background:#f7f7f7 ;height: 37px;margin-left:135px}
+#beibei .shou-beibei-right span{position: relative;font-size: 14px;}
+#beibei .shou-beibei-right span:first-child{margin-left:15px;}
+#beibei .shou-beibei-right span a{margin:0 10px}
+#beibei .shou-beibei-right span:first-child a{color:#7f4dbc;}
+#beibei .shou-beibei-right .span-num-1 a{color:#ff647c}

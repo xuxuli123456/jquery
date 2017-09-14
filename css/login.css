@@ -1,0 +1,51 @@
+*{margin:0;padding: 0;}
+.margin{width:1080px;margin:0 auto;}
+
+/*#header{height:105px;margin-bottom:100px;}
+#logo{margin-top: 45px;float: left;}
+#pinpai{float: right;margin-top:45px;}*/
+
+#form-t{font:bold 14px/18px "";margin-bottom: 20px;}
+#form-t span{float: right;font-size: 12px;font-weight: normal;}
+#form-t span a{color: red;}
+#loginbanner{height:621px;background: url(../img/09751803412737_500x354.png) no-repeat 50px 100px;}
+#form{width:329px;height:299px;border:1px solid #666666;float: right;padding: 50px 35px;margin-top:100px;}
+#form .lable{width:330px;height:30px;border: 1px solid #eeeeee;margin-top:15px;position: relative;}
+#form-bottom{font:12px/30px "";text-align: center;color:#afa3a3;background: #e8e8e8;margin-top:15px;position: relative;}
+#form .lable input{width:298px;height:30px;border: none;margin:0 0px;}
+#form .lable span{color:#eeeeee;margin-left:20px;}
+#form .t1{background: url(../img/xiao.png) no-repeat left top;background-position-x: 0px;background-position-y: 0;
+width:14px;height: 14px;display: block;position: absolute;top: 6px;left: 6px;}
+#form .t2{background: url(../img/xiao.png) no-repeat left top;background-position-x: 0px;background-position-y:-46px;
+width:14px;height: 14px;display: block;position: absolute;top: 6px;left: 6px;}
+#zhuai1{width:32px;height: 30px;border-right:1px solid #E6E6E6;text-align: center;color:#e6e6e6;
+position: absolute;z-index:2;left: 0;top: 0;/*background: #fff;*/background: red;}
+ #form-bottom i{height:30px;width:0;position: absolute;left: 0;top: 0;display: block;}
+#form-c{font:12px/48px "";}
+#form-c a{float:right;color: red;font-size: 10px;}
+#deng1,#deng2{position: absolute;}
+#st1,#st2{position: absolute;font:10px/18px "";top:30px;left:5px;}
+#st3{position: absolute;font:10px/18px "";top:-18px;left:5px;color:#4A4A4A}
+#btn{width:330px;height: 32px;background: #ff4965;border: none;border-radius: 5px;}
+#form .form-t{width:330px;font:10px/40px "";} 
+#form .form-t span{float: left;}
+#form .form-t ul{float: left;margin-top:6px}
+#form .form-t ul li{width:25px;height: 25px;float: left;margin:0 5px;list-style: none;}
+#form .form-t ul li a{width:25px;height: 25px;display: block;}
+#form .form-t ul li:first-child{background: url(../img/biao.png) no-repeat 0 0;}
+#form .form-t ul li:hover{background-position-x:-29px;}
+#form .form-t ul li:nth-child(2){background: url(../img/biao.png) no-repeat left top;background-position-x:-58px;
+background-position-y:0px;}
+#form .form-t ul li:nth-child(2):hover{background-position-x:-87px;}
+#form .form-t ul li:nth-child(3){background: url(../img/biao.png) no-repeat left top;background-position-x:-118px;}
+#form .form-t ul li:nth-child(3):hover{background-position-x:-148px;}
+
+/*#friendship{height:41px;background: black;text-align: center;}
+#friendship .margin{text-align: center;}
+#friendship ul {text-align: center;width:1080px;display: inline-block;}
+#friendship ul li{display: inline;line-height: 41px;font:10px/41px "";}
+#friendship ul li a{color:#ededed;margin-left:5px;margin-right: 8px;}
+#friendship ul li span{color:white;}
+#footer{height:104px;}
+#footer div{margin-top:20px;}
+#footer p{text-align:center;font:10px/18px "";margin-top:6px;}*/

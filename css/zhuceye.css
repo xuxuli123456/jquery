@@ -1,0 +1,46 @@
+*{margin:0;padding: 0;}
+.margin{width:1080px;margin:0 auto;}
+
+#zhubanner{height: 691px;background: url(../img/09751803412737_500x354.png) no-repeat 50px 100px;}
+#zhubanner .right{width:330px;height: 345px;border:1px solid #e6e6e6;float: right;margin-top: 100px;border-top: 2px solid #FF4965;
+padding:50px 35px}
+#zhubanner .right h3{bold font:16px/22px "";margin-bottom:16px;}
+#uname ,#tuo, #pswd{width:330px;height:30px;border:1px solid #E6E6E6;margin-top:15px;line-height: 30px;position: relative;}
+#st1{position: absolute;font:10px/16px "";left:15px;top: 30px;color:#e6e6e6;}
+#st2{position: absolute;font:10px/16px "";left:15px;top:30px;}
+#st3{position: absolute;font:10px/16px "";left:15px;top:30px;}
+#tuo{font:12px/30px "";text-align: center;color:#afa3a3;}
+#zhuai{width:32px;height: 30px;border-right:1px solid #E6E6E6;text-align: center;color:#e6e6e6;
+position: absolute;z-index:2;left: 0;top: 0;/*background: #fff;*/background: red;}
+#tuo i{height:30px;width:0;position: absolute;left: 0;top: 0;display: block;}
+#xin{width:218px;height:30px;border:1px solid #E6E6E6;margin-top:15px;position: relative;line-height: 30px;}
+#xin input{margin-left:5px;border: none;height:14px;font:12px/14px "";position: relative;outline: none;}
+#xin span{margin-left:30px;color:#e6e6e6;}
+#xin i{width:14px;height:14px;display: block;background: url(../img/xiao.png) no-repeat left top;
+position: absolute;left:6px;top:8px;background-position-y: -32px;}
+
+#uname input{width:275px;height:14px;font:12px/14px "";margin-left:5px;border: none;outline: none;}
+#uname  span{margin-left:30px;color:#e6e6e6;}
+#uname i{width:14px;height:14px;display: block;background: url(../img/xiao.png) no-repeat left top;
+position: absolute;left:6px;top:8px}
+#pswd input{width:275px;height:12px;margin-left:5px;border: none;outline: none;}
+#pswd span{margin-left:30px;color:#e6e6e6;}
+#pswd i{width:14px;height:14px;display: block;background: url(../img/xiao.png) no-repeat left top;
+position: absolute;left:6px;top:8px;background-position-y: -46px;}
+#bta{width:100px;height: 30px;font: 12px/30px "";border:1px solid #FF4965;border-radius: 3px;position: absolute;
+left:230px;text-align: center;}
+#zhubanner .right .bao{font:12px/16px "";width:330px;margin:15px 0;}
+#zhubanner .right .ce{font:12px/16px "";width:330px;margin-bottom: 10px;}
+#btn{width:330px;height:32px;background: #ff4965;border: none;border-radius: 3px;margin-top:15px;}
+#zhu-bottom{display: block;width:330px;height: 30px;font:12px/30px "";}
+#zhu-bottom span{float:left;display: block;font:12px/30px "";}
+#zhu-bottom ul{float: left;height: 30px;margin-top: 2px;}
+#zhu-bottom ul li{width:25px;height:25px;float: left;list-style: none;margin:0 5px;}
+#zhu-bottom ul li a{width:25px;height: 25px;display: block;}
+#zhu-bottom ul li:first-child{background: url(../img/biao.png) no-repeat 0 0;}
+#zhu-bottom ul li:hover{background-position-x:-29px;}
+#zhu-bottom ul li:nth-child(2){background: url(../img/biao.png) no-repeat left top;background-position-x:-58px;}
+#zhu-bottom ul li:nth-child(2):hover{background-position-x:-87px;}
+#zhu-bottom ul li:nth-child(3){background: url(../img/biao.png) no-repeat left top;background-position-x:-118px;}
+#zhu-bottom ul li:nth-child(3):hover{background-position-x:-148px;}
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/gouwuche.css" />
+		<link rel="stylesheet" href="../css/public.css" />
+		<link rel="stylesheet" href="../css/public1.css" />
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+		<script type="text/javascript" src="../js/cookie.js" ></script>>
+	</head>
+	<body>
+		<section id="top"></section>
+		<section id="head"></section>
+		<section id="main6">
+			<div class="top">
+				<h3>我的购物车</h3>
+			</div>
+			<div class="center">
+				<table>
+					<tr class="first">
+						<td><input type="checkbox" id="checkquan">全选</td>
+						<td>商品</td>
+						<td>商品信息</td>
+						<td>单价（元）</td>
+						<td>数量</td>
+						<td>小计(元)</td>
+						<td>操作</td>
+					</tr>
+					<!--<tr class="te">
+						<td class="c1"><input type="checkbox"></td>
+						<td class="c2"><img src="../img/00750164010587_800x800.jpg!100x100.jpg">
+						<p>佳思敏 Kids Smart 儿童维生素C+锌软糖60粒*2瓶（2岁以上）</p></td>
+						<td class="c3">标配</td>
+						<td class="c4"><span>100</span><br><br><span style="text-decoration: line-through;">200</span></td>
+						<td class="c5">
+							<span class="updateCount">+</span>
+							<input type="text" class="countnu"/>
+							<span class="updateCount">-</span>
+						</td>
+						<td class="c6">400</td>
+						<td class="c7">删除</td>
+					</tr>-->
+					
+				</table>
+			</div>
+			<div class="bottom">
+				<input type="checkbox" id="boxox">
+				全选 <i class="delete"></i>
+				共有<span class="count-t">0</span>件商品，已优惠0.00元，总计（不含运费）
+				<span class="money1">￥0</span>
+				<input type="button" value="确认订单" id ="bbtn"> 
+			</div>
+		</section>
+		
+		<section id="friendship"></section>
+		<section id="footer"></section>
+		
+	</body>
+</html>
+
+<script type="text/javascript">
+	$("#top").load("public1.html #top");
+	$("#head").load("public1.html #heade");
+	$("#friendship").load("public1.html #friendship");
+	$("#footer").load("public1.html #footer");
+</script>
+<script type="text/javascript">
+	
+	
+	$(function(){
+		var arr = getCookie("shoplist");
+	//	console.log(arr);
+		var str = "";
+		for(var i in arr){		
+			var ab=(Number(arr[i].price1)+Number(arr[i].price2/100))*arr[i].num;
+			str+=`<tr class="te">
+					<td class="c1"><input type="checkbox" class="techeck"></td>
+					<td class="c2"><img src="../img/${arr[i].src}">
+					<p>${arr[i].span1}</p></td>
+					<td class="c3">标配</td>
+					<td class="c4"><span>${Number(arr[i].price1)+Number(arr[i].price2/100)}</span><br><br><span style="text-decoration: line-through;">${arr[i].price3}</span></td>
+					<td class="c5">
+						<span class="updateCount updateCount1" data-num=${arr[i].num}>-</span>
+						<input type="text" class="countnu" value="${arr[i].num}"/>
+						<span class="updateCount updateCount2">+</span>						
+					</td>
+					<td class="c6">${ab}</td>
+					<td class="c7" data-id=${arr[i].id} data-price1=${arr[i].price1} data-price2=${arr[i].price2} data-price3=${arr[i].price3}>删除</td>
+				</tr>`
+		}
+		$(".center table").append(str);
+		   
+		    //删除操作
+            $(".c7").click(function(){
+            	 var id = $(this).data("id");
+            	$(this).parent().find(".countnu").val(); 
+             	$(this).parent().remove();
+             	for(var i in arr){
+             		if(id==arr[i].id){
+             			arr.splice(i,1);
+             			setCookie("shoplist",JSON.stringify(arr));
+             		}
+             	}           
+            })
+            //购物车内数量加减
+            $(".updateCount1").click(function(){
+            	var num5 = $(this).data("num");
+            	var id = $(this).parent().parent().find(".c7").data("id");
+            	var price1=$(this).parent().parent().find(".c7").data("price1");
+            	var price1=$(this).parent().parent().find(".c7").data("price2");
+            	for(var i in arr){
+            		if(id==arr[i].id){
+            			arr[i].num--;
+            			if(arr[i].num<=1){
+            				arr[i].num=1;
+            			}
+            			setCookie("shoplist",JSON.stringify(arr));
+            			$(this).parent().find(".countnu").val(arr[i].num);
+            			$(this).parent().parent().find(".c6").html( (Number(arr[i].price1)+Number(arr[i].price2/100))*arr[i].num )
+            			
+            		}
+            	}
+            })    
+            $(".updateCount2").click(function(){
+            	var num5 = $(this).data("num");
+            	var id = $(this).parent().parent().find(".c7").data("id");
+            	for(var i in arr){
+            		if(id==arr[i].id){
+            			arr[i].num++;
+            			$(this).parent().find(".countnu").val(arr[i].num);
+            			setCookie("shoplist",JSON.stringify(arr));
+            			$(this).parent().parent().find(".c6").html( (Number(arr[i].price1)+Number(arr[i].price2/100))*arr[i].num )
+            		}
+            	}
+            })    
+		
+		
+		//结算 显示到页面
+		
+		$(".techeck").click(function(){
+			jisuan()
+		})
+		//全选
+		$("#checkquan").click(function(){
+			$(".techeck").prop("checked",$(this).prop("checked"));
+			jisuan();
+		})
+		$("#boxox").click(function(){
+			$(".techeck").prop("checked",$(this).prop("checked"));
+			jisuan();	
+		})
+		
+		
+	})
+	//结算函数
+	function jisuan(){
+			var count = 0;
+			var money = 0;
+			$(".techeck:checked").each(function(){
+				count+=parseInt($(this).parent().parent().find(".countnu").val());
+				money+=parseInt( $(this).parent().parent().find(".c6").html() );
+			})
+			$(".count-t").html(count);
+			$(".money1").html(money);
+		}
+	
+</script>
